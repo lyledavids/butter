@@ -3,4 +3,3 @@
 
 
 https://img.shields.io/npm/v/@0xlyle/butter
-https://img.shields.io/npm/dw/@0xlyle/butter
