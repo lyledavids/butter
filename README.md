@@ -11,3 +11,15 @@
 ```
 npm i @0xlyle/butter
 ```
+
+
+## Usage
+
+```
+const butter = require("@0xlyle/butter");
+let access = await butter.spread(chainID,accountAddress,covalentKey,tokenContractAddress)
+
+//Returns true or false
+//Depending on result, show user appropriate message
+//if(access) //true do something else(false) //do something
+```
