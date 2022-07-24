@@ -16,10 +16,26 @@ npm i @0xlyle/butter
 ## Usage
 
 ```
-const butter = require("@0xlyle/butter");
-let access = await butter.spread(chainID,accountAddress,covalentKey,tokenContractAddress)
+import { spread } from '@0xlyle/butter'
+const result = await spread(chainID,accountAddress,covalentKey,tokenContractAddress)
 
+
+const result = await spread("1","0x0...","ckey_32...","0xd....")
+
+
+OR 
+
+const chainID = "1" //ETH Mainnet
+const accountAddress = "0x0...."
+const covalentKey = "ckey_32..."
+const tokenContractAddress = "0xd...."
+const result = await spread(chainID,accountAddress,covalentKey,tokenContractAddress)
 //Returns true or false
 //Depending on result, show user appropriate message
-//if(access) //true do something else(false) //do something
+//if(result) //true do something else(false) //do something
 ```
+
+Get Covalent Key from https://www.covalenthq.com/
+
+Sample React app - https://butter-sample-app-pooly-supporter.netlify.app/
+Sample React app repo - https://github.com/lyledavids/butter_react_sample_app

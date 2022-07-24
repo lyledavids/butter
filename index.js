@@ -4,7 +4,7 @@ var requestOptions = {
   };
 
 let ps = []
-async function spread(chainID,ethAddress,covalentKey,accessTokenContractAddress) {
+exports.spread = async function(chainID,ethAddress,covalentKey,accessTokenContractAddress) {
   const res = await fetch(`https://api.covalenthq.com/v1/${chainID}/address/${ethAddress}/balances_v2/?quote-currency=USD&format=JSON&nft=true&no-nft-fetch=true&key=${covalentKey}`, requestOptions)
   ps = await res.json()
   ps = ps.data.items
@@ -17,5 +17,3 @@ async function spread(chainID,ethAddress,covalentKey,accessTokenContractAddress)
   else
     return true
 }
-
-//spread(chainID,ethAddress,covalentKey,accessTokenContractAddress)
