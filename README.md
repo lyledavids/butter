@@ -1,5 +1,8 @@
 # @0xlyle/butter
- A quick and easy way to integrate token gating in your project
+A quick and easy way to integrate token gating in your project
+
+
+With token gating usage growing in the web3 space. Butter hopes to shorten development time for token-gating integrations with a few lines of Javascript/Typescript code.
 
 [![npm (scoped)](https://img.shields.io/npm/v/@0xlyle/butter.svg)](https://www.npmjs.com/package/@0xlyle/butter)
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@0xlyle/butter.svg)](https://www.npmjs.com/package/@0xlyle/butter)
@@ -35,7 +38,11 @@ const result = await spread(chainID,accountAddress,covalentKey,tokenContractAddr
 //if(result) //true do something else(false) //do something
 ```
 
+Butter is built on top of the Covalent API, in order you will need a Covalent API Key.
+
 Get Covalent Key from https://www.covalenthq.com/
 
+
 Sample React app - https://butter-sample-app-pooly-supporter.netlify.app/
+
 Sample React app repo - https://github.com/lyledavids/butter_react_sample_app
